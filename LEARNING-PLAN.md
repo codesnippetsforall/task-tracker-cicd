@@ -155,7 +155,7 @@ Use **GitHub Secrets** for deploy tokens (never commit secrets).
 
 ## Milestone checklist
 
-- [x] Phase 0: Node installed; folders ready _(GitHub repo still pending)_
+- [x] Phase 0: Node installed; folders ready; GitHub repo created
 - [x] Phase 1: App runs locally (React + API)
 - [x] Phase 1: Tests/builds pass locally
 - [ ] Phase 2: CI workflow runs on every PR
@@ -178,6 +178,7 @@ Use **GitHub Secrets** for deploy tokens (never commit secrets).
 ## Current status
 
 - Workspace: `d:\learning\OneDrive\Documents\2026\cicd\github`
-- Phase 1 done: Task Tracker runs locally; tests/builds pass
-- Remaining before Phase 2: `git init` + create GitHub repo `task-tracker-cicd`
-- Next action: create the repo, then **Phase 2** CI workflow
+- Repo: https://github.com/codesnippetsforall/task-tracker-cicd
+- Phase 0–1 done
+- Phase 2 in progress: `.github/workflows/ci.yml` added (Backend + Frontend: install → lint/test → build)
+- Next: push CI on a PR, enable branch protection, practice a failing then green PR
