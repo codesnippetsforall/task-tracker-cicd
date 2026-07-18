@@ -158,8 +158,8 @@ Use **GitHub Secrets** for deploy tokens (never commit secrets).
 - [x] Phase 0: Node installed; folders ready; GitHub repo created
 - [x] Phase 1: App runs locally (React + API)
 - [x] Phase 1: Tests/builds pass locally
-- [ ] Phase 2: CI workflow runs on every PR
-- [ ] Phase 2: Broken PR blocked by failed checks
+- [x] Phase 2: CI workflow runs on every PR
+- [x] Phase 2: Broken PR blocked by failed checks
 - [ ] Phase 3: Merge to `main` deploys frontend + backend
 - [ ] Phase 3: Feature change visible live after merge
 - [ ] Phase 4 (optional): Environments / cache / badge
@@ -179,6 +179,5 @@ Use **GitHub Secrets** for deploy tokens (never commit secrets).
 
 - Workspace: `d:\learning\OneDrive\Documents\2026\cicd\github`
 - Repo: https://github.com/codesnippetsforall/task-tracker-cicd
-- Phase 0–1 done
-- Phase 2 in progress: `.github/workflows/ci.yml` added (Backend + Frontend: install → lint/test → build)
-- Next: push CI on a PR, enable branch protection, practice a failing then green PR
+- Phase 0–2 done: CI + branch protection + failing-then-green PR practice
+- Next action: **Phase 3** — deploy frontend + backend on merge to `main`
