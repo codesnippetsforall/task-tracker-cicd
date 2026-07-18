@@ -1,0 +1,149 @@
+.app {
+  width: min(640px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.header {
+  color: #eef7f4;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #9ad6cb;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  margin: 0.6rem 0 0;
+  color: #c5ddd7;
+  max-width: 36ch;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.add-form {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.add-form input {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  background: #fffdf8;
+  color: var(--ink);
+}
+
+.add-form input:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 55%, white);
+  outline-offset: 1px;
+}
+
+.add-form button,
+.btn-delete {
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.add-form button {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.1rem;
+  font-weight: 600;
+}
+
+.add-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.error {
+  margin: 0.85rem 0 0;
+  color: var(--danger);
+  font-size: 0.95rem;
+}
+
+.muted {
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+
+.task-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+}
+
+.task-label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+  flex: 1;
+  cursor: pointer;
+}
+
+.task-title {
+  overflow-wrap: anywhere;
+}
+
+.task-item.is-done .task-title {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.btn-delete {
+  background: transparent;
+  color: var(--danger);
+  padding: 0.35rem 0.55rem;
+  font-size: 0.85rem;
+}
+
+.btn-delete:hover {
+  background: color-mix(in srgb, var(--danger) 12%, white);
+}
+
+.footer-meta {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .add-form {
+    flex-direction: column;
+  }
+}
