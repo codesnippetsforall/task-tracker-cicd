@@ -13,8 +13,7 @@ describe("Task Tracker API", () => {
   test("GET /api/health returns ok", async () => {
     const res = await request(app).get("/api/health");
     expect(res.status).toBe(200);
-    // Intentional fail for Phase 2 practice — expect wrong status
-    expect(res.body).toEqual({ status: "healthy" });
+    expect(res.body).toEqual({ status: "ok" });
   });
 
   test("POST and GET /api/tasks create and list tasks", async () => {
